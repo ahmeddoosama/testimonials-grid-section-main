@@ -1,0 +1,9 @@
+// hover-focus Mixin
+
+@mixin hover-focus {
+
+    &:hover,
+    &:focus {
+      @content;
+    }
+  }

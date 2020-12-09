@@ -1,0 +1,84 @@
+@import "../mixin/mixin";
+
+// Grid system Variables
+$grid-columns: 12 !default;
+$screen-sm: 768px !default;
+$screen-md: 992px !default;
+$screen-lg: 1200px !default;
+$grid-gutter-width: 30px !default;
+$screen-md-min: $screen-md !default;
+$screen-sm-min: $screen-sm !default;
+$screen-lg-min: $screen-lg !default;
+$container-tablet: (720px + $grid-gutter-width) !default;
+$container-sm: $container-tablet !default;
+$container-desktop: (940px + $grid-gutter-width) !default;
+$container-md: $container-desktop !default;
+$container-large-desktop: (1140px + $grid-gutter-width) !default;
+$container-lg: $container-large-desktop !default;
+
+// --------------------------------------------------
+
+// Container widths
+
+.container {
+    @include container-fixed;
+
+    @media (min-width: $screen-sm-min) {
+        width: $container-sm;
+    }
+
+    @media (min-width: $screen-md-min) {
+        width: $container-md;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        width: $container-lg;
+    }
+}
+
+
+// Fluid container
+
+.container-fluid {
+    @include container-fixed;
+}
+
+
+// Row
+
+.row {
+    @include make-row;
+}
+
+
+// Columns
+
+
+@include make-grid-columns;
+
+
+// Extra small grid
+
+@include make-grid(xs);
+
+
+// Small grid
+
+@media (min-width: $screen-sm-min) {
+    @include make-grid(sm);
+}
+
+
+// Medium grid
+
+@media (min-width: $screen-md-min) {
+    @include make-grid(md);
+}
+
+
+// Large grid
+
+
+@media (min-width: $screen-lg-min) {
+    @include make-grid(lg);
+}

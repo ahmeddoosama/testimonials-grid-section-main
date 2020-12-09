@@ -1,0 +1,12 @@
+// box-shadow Mixin Variables
+
+$enable-rounded: true !default;
+$border-radius: .25rem !default;
+
+// box-shadow Mixin 
+
+@mixin border-radius($radius: $border-radius) {
+    @if $enable-rounded {
+      border-radius: $radius;
+    }
+  }

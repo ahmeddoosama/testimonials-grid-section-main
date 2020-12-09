@@ -1,0 +1,9 @@
+// make-grid Mixin 
+
+@mixin make-grid($class) {
+    @include float-grid-columns($class);
+    @include loop-grid-columns($grid-columns, $class, width);
+    @include loop-grid-columns($grid-columns, $class, pull);
+    @include loop-grid-columns($grid-columns, $class, push);
+    @include loop-grid-columns($grid-columns, $class, offset);
+  }
