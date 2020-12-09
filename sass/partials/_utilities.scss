@@ -42,9 +42,12 @@ ul, ol {
 
 a {
     text-decoration: none;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
     &:hover {
         text-decoration: none;
     }
 }
-
-
