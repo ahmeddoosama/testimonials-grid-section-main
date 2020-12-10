@@ -82,3 +82,21 @@ $container-lg: $container-large-desktop !default;
 @media (min-width: $screen-lg-min) {
     @include make-grid(lg);
 }
+
+
+// Cards Grid
+.grid-card-1 {
+    grid-area: grid-card-1;
+}
+.grid-card-2 {
+    grid-area: grid-card-2;
+}
+.grid-card-3 {
+    grid-area: grid-card-3;
+}
+.grid-card-4 {
+    grid-area: grid-card-4;
+}
+.grid-card-5 {
+    grid-area: grid-card-5;
+}

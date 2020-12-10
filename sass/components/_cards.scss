@@ -1,0 +1,42 @@
+/* ========== Contain Cards style ========== */
+@import '../partials/variables';
+@import '../partials/colors';
+
+/* Cards Variable */
+$card-box-shadow: 10px 10px 10px -10px $Light-gray;
+
+/* ========== Cards ========== */
+.cards-groub {
+    display: grid;
+    grid-gap: 10px;
+    grid-gap: 20px;
+      grid-template-areas:  "grid-card-1 grid-card-1 grid-card-2 grid-card-5"
+                            "grid-card-3 grid-card-4 grid-card-4 grid-card-5";
+}
+
+.card {
+    background-color: $white;
+    padding: 15px 10px;
+    margin: 10px 0;
+    border-radius: 15px;
+    box-shadow: $card-box-shadow;
+}
+
+.card__header,
+.card__body {
+    padding: 10px 0;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+}
+
+.card__header {
+    img {
+        border-radius: 50%;
+        width: 40px;
+        border: 3px solid $Light-gray;
+        margin-right: 15px;
+    }
+}

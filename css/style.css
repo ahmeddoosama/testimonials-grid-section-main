@@ -899,6 +899,26 @@ Written by: 	Ahmed Osama Bedawy - (https://github.com/ahmeddoosama)
     margin-left: 100%;
   }
 }
+.grid-card-1 {
+  grid-area: grid-card-1;
+}
+
+.grid-card-2 {
+  grid-area: grid-card-2;
+}
+
+.grid-card-3 {
+  grid-area: grid-card-3;
+}
+
+.grid-card-4 {
+  grid-area: grid-card-4;
+}
+
+.grid-card-5 {
+  grid-area: grid-card-5;
+}
+
 /* Public Colors */
 /* Public Colors */
 /***
@@ -945,6 +965,47 @@ a:hover {
   text-decoration: none;
 }
 
+/* ========== Contain Cards style ========== */
+/* Public Colors */
+/* Public Colors */
+/* Cards Variable */
+/* ========== Cards ========== */
+.cards-groub {
+  display: grid;
+  grid-gap: 10px;
+  grid-gap: 20px;
+  grid-template-areas: "grid-card-1 grid-card-1 grid-card-2 grid-card-5" "grid-card-3 grid-card-4 grid-card-4 grid-card-5";
+}
+
+.card {
+  background-color: white;
+  padding: 15px 10px;
+  margin: 10px 0;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px -10px #cfcfcf;
+}
+
+.card__header,
+.card__body {
+  padding: 10px 0;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+}
+
+.card__header img {
+  border-radius: 50%;
+  width: 40px;
+  border: 3px solid #cfcfcf;
+  margin-right: 15px;
+}
+
+/* ========== Contain Footer style ========== */
+/* Public Colors */
+/* Public Colors */
+/* ========== Footer ========== */
 .main-footer {
   text-align: center;
   margin: 10px 0;
