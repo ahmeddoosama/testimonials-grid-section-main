@@ -899,6 +899,26 @@ Written by: 	Ahmed Osama Bedawy - (https://github.com/ahmeddoosama)
     margin-left: 100%;
   }
 }
+.grid-card-1 {
+  grid-area: grid-card-1;
+}
+
+.grid-card-2 {
+  grid-area: grid-card-2;
+}
+
+.grid-card-3 {
+  grid-area: grid-card-3;
+}
+
+.grid-card-4 {
+  grid-area: grid-card-4;
+}
+
+.grid-card-5 {
+  grid-area: grid-card-5;
+}
+
 /* Public Colors */
 /* Public Colors */
 /***
@@ -945,6 +965,89 @@ a:hover {
   text-decoration: none;
 }
 
+/* ========== Contain Cards style ========== */
+/* Public Colors */
+/* Public Colors */
+/* Cards Variable */
+/* ========== Cards ========== */
+.cards-groub {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "grid-card-1 grid-card-1 grid-card-2 grid-card-5" "grid-card-3 grid-card-4 grid-card-4 grid-card-5";
+  margin-top: 3%;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 32px;
+  margin: 10px 0;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px -10px #cfcfcf;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.card__header {
+  color: white;
+}
+.card__header img {
+  border-radius: 50%;
+  width: 40px;
+  border: 3px solid #cfcfcf;
+  margin-right: 15px;
+}
+.card__header .person__name {
+  font-size: 16px;
+}
+.card__header h5 {
+  opacity: 50%;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.card__body {
+  padding: 10px 0;
+  color: white;
+}
+.card__body .card__intro {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+.card__body .card__review {
+  opacity: 50%;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.card:first-child {
+  background: #7541c8 url("../images/background/bg-pattern-quotation.svg") no-repeat top 20px right 80px;
+}
+
+.card:nth-child(2) {
+  background-color: #48556a;
+}
+
+.card:nth-child(4) {
+  background-color: #19212e;
+}
+
+.card:nth-child(3) .card__header,
+.card:nth-child(3) .card__body,
+.card:nth-child(5) .card__header,
+.card:nth-child(5) .card__body {
+  color: #48556a;
+}
+
+/* ========== Contain Footer style ========== */
+/* Public Colors */
+/* Public Colors */
+/* ========== Footer ========== */
 .main-footer {
   text-align: center;
   margin: 10px 0;

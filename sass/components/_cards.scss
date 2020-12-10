@@ -1,0 +1,86 @@
+/* ========== Contain Cards style ========== */
+@import '../partials/variables';
+@import '../partials/colors';
+
+/* Cards Variable */
+$card-box-shadow: 10px 10px 10px -10px $Light-gray;
+
+/* ========== Cards ========== */
+.cards-groub {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:"grid-card-1 grid-card-1 grid-card-2 grid-card-5"
+                        "grid-card-3 grid-card-4 grid-card-4 grid-card-5";
+    margin-top: 3%;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: $white;
+    padding: 32px;
+    margin: 10px 0;
+    border-radius: 15px;
+    box-shadow: $card-box-shadow;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.card__header {
+    color: $white;
+    img {
+        border-radius: 50%;
+        width: 40px;
+        border: 3px solid $Light-gray;
+        margin-right: 15px;
+    }
+
+    .person__name {
+        font-size: 16px;
+    }
+
+    h5 {
+        opacity: 50%;
+        font-size: 13px;
+        font-weight: 100;
+    }
+}
+
+.card__body {
+    padding: 10px 0;
+    color: $white;
+
+    .card__intro {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+    .card__review {
+        opacity: 50%;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+.card:first-child {
+    background:$Moderate-violet url("../images/background/bg-pattern-quotation.svg") no-repeat top 20px right 80px;
+}
+
+.card:nth-child(2) {
+    background-color: $Very-dark-grayish-blue;
+}
+
+.card:nth-child(4) {
+    background-color: $Very-dark-blackish-blue;
+}
+
+.card:nth-child(3),
+.card:nth-child(5) {
+    .card__header,
+    .card__body {
+        color: $Very-dark-grayish-blue;
+    }
+}
