@@ -14,6 +14,16 @@ $card-box-shadow: 10px 10px 10px -10px $Light-gray;
                         "grid-card-3 grid-card-4 grid-card-4 grid-card-5";
     margin-top: 3%;
     margin-bottom: 20px;
+
+    @media #{$MediumDevices} {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "grid-card-1 grid-card-2" "grid-card-3 grid-card-4" "grid-card-5 grid-card-5"
+    }
+
+    @media #{$smallDevices} {
+        grid-template-columns: repeat(1, 100%);
+        grid-template-areas: "grid-card-1" "grid-card-2" "grid-card-3" "grid-card-4" "grid-card-5"
+    }
 }
 
 .card {
@@ -26,7 +36,7 @@ $card-box-shadow: 10px 10px 10px -10px $Light-gray;
 
 .card__header {
     display: flex;
-    align-items: center;
+    align-items: $text-align-center;
     padding-bottom: 10px;
 }
 

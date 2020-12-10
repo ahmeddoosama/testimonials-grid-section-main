@@ -18,3 +18,8 @@ $text-align-right: right;
 // Body Variable
 $body-font-size: 13px;
 $body-font-family: "Barlow Semi Condensed", sans-serif;
+
+
+/* Responsive */
+$smallDevices: "only screen and (max-width: 767px)"; // EX >> @media #{$smallDevices}
+$MediumDevices: "only screen and (min-width: 768px) and (max-width: 1200px)";

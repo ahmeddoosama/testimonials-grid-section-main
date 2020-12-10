@@ -920,6 +920,7 @@ Written by: 	Ahmed Osama Bedawy - (https://github.com/ahmeddoosama)
 }
 
 /* Public Colors */
+/* Responsive */
 /* Public Colors */
 /***
 *
@@ -967,6 +968,7 @@ a:hover {
 
 /* ========== Contain Cards style ========== */
 /* Public Colors */
+/* Responsive */
 /* Public Colors */
 /* Cards Variable */
 /* ========== Cards ========== */
@@ -977,6 +979,18 @@ a:hover {
   grid-template-areas: "grid-card-1 grid-card-1 grid-card-2 grid-card-5" "grid-card-3 grid-card-4 grid-card-4 grid-card-5";
   margin-top: 3%;
   margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .cards-groub {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "grid-card-1 grid-card-2" "grid-card-3 grid-card-4" "grid-card-5 grid-card-5";
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cards-groub {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-areas: "grid-card-1" "grid-card-2" "grid-card-3" "grid-card-4" "grid-card-5";
+  }
 }
 
 .card {
@@ -1046,6 +1060,7 @@ a:hover {
 
 /* ========== Contain Footer style ========== */
 /* Public Colors */
+/* Responsive */
 /* Public Colors */
 /* ========== Footer ========== */
 .main-footer {
